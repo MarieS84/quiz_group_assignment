@@ -1,7 +1,14 @@
 let questions = [
-    {question: "Earth is flat.", options: ["True", "False"], answer: 1},
-    {question: "Earth is flat.", options: ["True", "False"], answer: 1},
-    {question: "Java is a programming language", options: ["True", "False"], answer: 0}
+    {question: "What is someone who shoes horses called?", options: ["Horse shoe smith", "Farrier", "Blacksmith", "Schumacher"], answer: 1},
+    {question: "What is the seventh planet from the sun?", options: ["Mercury", "Jupiter", "Uranus", "Earth", "Mars"], answer: 2},
+    {question: "What kind of weapon is a falchion?", options: ["Sword", "Lance", "Dagger", "Throwing star"], answer: 0},
+    {question: "Which country is home to the Cresta Run?", options: ["Switzerland", "Ireland", "Germany", "Italy", "United States"], answer: 0},
+    {question: "In needlework, what does UFO refer to?", options: ["Unfashioned order", "Uniform fringed oval", "Underfolded offset", "Unfinished object"], answer: 3},
+    {question: "If you were painting with tempera, what would you be using to bind together colour pigments?", options: ["Oil", "Flower", "Egg yolk", "Plaster"], answer: 2},
+    {question: "Elisha Graves Otis invented the elevator", options: ["True", "False"], answer: 0},
+    {question: "Which of the following is not a sistership of Titanic?", options: ["Britannic", "Atlantic", "Olympic"], answer: 1},
+    {question: "Who was Henry VIll's first wife?", options: ["Anne Boleyn", "Jane Seymour", "Anne of Cleves", "Catherine of Aragon", "Catherine Howard", "Catherine Parr"], answer: 3},
+    {question: "When was the euro introduced as legal currency on the world market?", options: ["1996", "1999", "2001", "2003"], answer: 1}
 ]
 
 let count = -1
