@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        
+
+
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="cardStyling col-md-6">
+                <div id="quizCard" class="centered">
+                    <h1 class="standardPadding">Quiz</h1>
+                    
+                    <div class="standardPadding" id="question">
+                        <h2>Jorden är platt.</h2>
+
+                    </div>
+
+
+                    <button id="TrueButton" onclick="answerCheck(true)" type="button"
+                        class="btn btn-primary">True</button>
+                    <button id="FalseButton" onclick="answerCheck(false)" type="button"
+                        class="btn btn-primary">False</button>
+                    <div id="alert"></div>
+
+                    <button id="NextQuestionButton" onclick="generateNewQuestion()" type="button"
+                        class="btn btn-secondary hide">Next Question</button>
+
+                    <button id="ShowScoreButton" onclick="showScore()" type="button"
+                    class="btn btn-secondary hide">Show Score</button>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

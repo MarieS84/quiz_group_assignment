@@ -1,0 +1,31 @@
+.hide{
+
+    display: none !important; 
+}
+
+.centered{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body{
+    background-image: url("images/mountain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardStyling{
+    background-color: #0C4160aa;
+    margin-top: 25%;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.standardPadding{
+    padding: 20px 5px;
+    
+}
+
+.buttonMargin{
+    margin: 20px 5px;
+}
