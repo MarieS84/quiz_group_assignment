@@ -60,7 +60,7 @@ function generateNewQuestion(){
         html += `
         <div class="form-check" style="text-align: left">
             <input class="form-check-input" type="radio" name="answer" value="${pos}">
-            <label class="form-check-label" for="exampleRadios1">
+            <label class="form-check-label textColor" for="exampleRadios1">
                 ${option}
             </label>
         </div>
