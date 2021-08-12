@@ -17,11 +17,6 @@
 
 <body>
     <div class="container">
-        
-        
-
-
-
         <div class="row">
             <div class="col-md-3"></div>
             <div class="cardStyling col-md-6">
@@ -30,14 +25,18 @@
                     
                     <div class="standardPadding" id="question">
                         <h2>Jorden är platt.</h2>
-
                     </div>
 
+                    <div id="options"></div>
 
+                    <button id="answerButton" type="button" class="btn btn-primary" onclick="answerCheck()">Answer</button>
+
+                    <!--
                     <button id="TrueButton" onclick="answerCheck(true)" type="button"
                         class="btn btn-primary">True</button>
                     <button id="FalseButton" onclick="answerCheck(false)" type="button"
                         class="btn btn-primary">False</button>
+                    -->
                     <div id="alert"></div>
 
                     <button id="NextQuestionButton" onclick="generateNewQuestion()" type="button"
@@ -48,15 +47,7 @@
                 </div>
                 <div class="col-md-3"></div>
             </div>
-
-
         </div>
-
-
-
-
-
-
     </div>
 
 
