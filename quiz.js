@@ -63,7 +63,8 @@ function generateNewQuestion(){
             <label class="form-check-label" for="exampleRadios1">
                 ${option}
             </label>
-        </div>`
+        </div>
+        `
         pos++
     }
 

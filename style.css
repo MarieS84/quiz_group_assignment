@@ -16,7 +16,6 @@ body{
 }
 .cardStyling{
     background-color: #0C4160aa;
-    margin-top: 25%;
     padding-bottom: 20px;
     border-radius: 20px;
 }
@@ -28,4 +27,9 @@ body{
 
 .buttonMargin{
     margin: 20px 5px;
+}
+
+.option {
+    margin-left: 100px;
+
 }
