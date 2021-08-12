@@ -79,7 +79,7 @@ function generateNewQuestion(){
 }
 
 function showScore(){
-    document.getElementById("quizCard").innerHTML =`<h4>You had ${points} correct answers out of ${questions.length}</h4>`
+    document.getElementById("quizCard").innerHTML =`<h4 class="textColor">You had ${points} correct answers out of ${questions.length}</h4>`
 }
 
 
