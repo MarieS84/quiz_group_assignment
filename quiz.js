@@ -45,7 +45,7 @@ function answerCheck(){
     }
     else{
         document.getElementById("alert").innerHTML = `<div class="alert alert-danger" role="alert">
-        Incorrect!
+        Incorrect! The correct answer is: ${questions[count].options[questions[count].answer]}
       </div>`
     }
 }
