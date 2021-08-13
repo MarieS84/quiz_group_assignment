@@ -1,5 +1,4 @@
 .hide{
-
     display: none !important; 
 }
 
@@ -25,7 +24,6 @@ html {
 
 .standardPadding{
     padding: 20px 5px;
-    
 }
 
 .buttonMargin{
@@ -34,7 +32,8 @@ html {
 
 .option {
     margin-left: 200px;
-
+    margin-right: 200px;
+    padding: 10px;
 }
 
 .textColor{

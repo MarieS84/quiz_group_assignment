@@ -15,7 +15,24 @@ let count = -1
 let points = 0
 generateNewQuestion()
 
-function answerCheck(){
+function answerCheck() {
+    let options = document.getElementsByName("answer")
+    let isAnswer = false
+
+    for(let option of options) {
+        if (option.checked) {
+            isAnswer = true
+            break
+        }
+    }
+
+    if (!isAnswer) {
+        document.getElementById("options").classList.add("border")
+        document.getElementById("options").classList.add("border-danger")
+        document.getElementById("options").classList.add("border-5")
+        return
+    }
+
     if(count != questions.length-1){
         document.getElementById("NextQuestionButton").classList.remove("hide")
     }
@@ -24,7 +41,6 @@ function answerCheck(){
     }
     document.getElementById("answerButton").classList.add("hide")
 
-    let options = document.getElementsByName("answer")
     let answer = -1
     console.log("Options", options)
     for(let option of options) {
@@ -62,7 +78,7 @@ function generateNewQuestion(){
     for (let option of questions[count].options) {
         html += `
         <div class="form-check" style="text-align: left">
-            <input class="form-check-input" type="radio" id="answer${pos}" name="answer" value="${pos}">
+            <input class="form-check-input" type="radio" id="answer${pos}" name="answer" value="${pos}" onclick="removeRedBorder()">
             <label class="form-check-label textColor" for="answer${pos}">
                 ${option}
             </label>
@@ -76,6 +92,12 @@ function generateNewQuestion(){
 
 function showScore(){
     document.getElementById("quizCard").innerHTML =`<h4 class="textColor centr">You had ${points} correct answers out of ${questions.length}</h4>`
+}
+
+function removeRedBorder() {
+    document.getElementById("options").classList.remove("border")
+    document.getElementById("options").classList.remove("border-danger")
+    document.getElementById("options").classList.remove("border-5")
 }
 
 
