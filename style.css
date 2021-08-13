@@ -9,11 +9,14 @@
     text-align: center;
 }
 
-body{
+html {
     background-image: url("images/mountain.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    width: auto;
 }
+
 .cardStyling{
     background-color: #0C4160aa;
     padding-bottom: 20px;

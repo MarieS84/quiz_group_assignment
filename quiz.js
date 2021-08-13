@@ -22,8 +22,6 @@ function answerCheck(){
     else{
         document.getElementById("ShowScoreButton").classList.remove("hide")
     }
-    // document.getElementById("TrueButton").classList.add("hide")
-    // document.getElementById("FalseButton").classList.add("hide")
     document.getElementById("answerButton").classList.add("hide")
 
     let options = document.getElementsByName("answer")
@@ -57,8 +55,6 @@ function generateNewQuestion(){
     document.getElementById("question").innerText = questions[count].question
     document.getElementById("NextQuestionButton").classList.add("hide")
     document.getElementById("answerButton").classList.remove("hide")
-    //document.getElementById("TrueButton").classList.remove("hide")
-    //document.getElementById("FalseButton").classList.remove("hide")
     document.getElementById("alert").innerHTML = ""
     
     let html = ""
@@ -66,8 +62,8 @@ function generateNewQuestion(){
     for (let option of questions[count].options) {
         html += `
         <div class="form-check" style="text-align: left">
-            <input class="form-check-input" type="radio" name="answer" value="${pos}">
-            <label class="form-check-label textColor" for="exampleRadios1">
+            <input class="form-check-input" type="radio" id="answer${pos}" name="answer" value="${pos}">
+            <label class="form-check-label textColor" for="answer${pos}">
                 ${option}
             </label>
         </div>
