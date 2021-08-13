@@ -34,12 +34,12 @@ function answerCheck() {
     }
 
     if (count != questions.length - 1) {
-        document.getElementById("NextQuestionButton").classList.remove("hide")
+        show("nextQuestionButton")
     }
     else {
-        document.getElementById("ShowScoreButton").classList.remove("hide")
+        show("showScoreButton")
     }
-    document.getElementById("answerButton").classList.add("hide")
+    hide("answerButton")
 
     let answer = -1
     console.log("Options", options)
@@ -69,8 +69,8 @@ function answerCheck() {
 function generateNewQuestion() {
     count++
     document.getElementById("question").innerText = questions[count].question
-    document.getElementById("NextQuestionButton").classList.add("hide")
-    document.getElementById("answerButton").classList.remove("hide")
+    hide("nextQuestionButton")
+    show("answerButton")
     document.getElementById("alert").innerHTML = ""
 
     let html = ""
@@ -128,4 +128,12 @@ function removeRedBorder() {
     document.getElementById("options").classList.remove("border")
     document.getElementById("options").classList.remove("border-danger")
     document.getElementById("options").classList.remove("border-5")
+}
+
+function hide(elementName) {
+    document.getElementById(elementName).classList.add("hide")
+}
+
+function show(elementName) {
+    document.getElementById(elementName).classList.remove("hide")
 }
